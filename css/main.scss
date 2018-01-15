@@ -1,0 +1,376 @@
+---
+---
+
+@charset "utf-8";
+
+// Our variables
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-item .btn {
+        width: 100%;
+    }
+    .title-tagline {
+      display: none;
+    }
+    footer a .fa {
+      font-size: 20px;
+    }
+    .footer-cert {
+    display: none;
+    }
+}
+
+// Color Variables
+
+$title-a: #F41822;
+$title-b: #0A9444;
+$primary-color-dark:   #0288D1;
+$primary-color:        #03A9F4;
+$primary-color-light:  #B3E5FC;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #FFC107;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
+// Font Variables
+
+$font-header: 'Roboto', sans-serif;
+$font-body: 'Open Sans', sans-serif;
+
+
+/* Custom CSS */
+body {
+  counter-reset: item;
+  font-family: 'Roboto', sans-serif;
+  // font-weight: 300;
+  background-color: #e2e2e2;
+  color: $primary-text-color
+}
+.navbar-toggler-icon {
+  color: white;
+}
+.navbar-toggler-icon .material-icons {
+  font-size: 30px;
+}
+.title-a,.title-b {
+  font-weight: 500;
+    -webkit-text-stroke: 1px #fff;
+}
+.title-a, a .title-a {
+  color: $title-a;
+}
+.title-b, a .title-b {
+  color: $title-b;
+}
+ h2 .title-a, h2 .title-b {
+  font-size: 34px;
+  letter-spacing: 2px;
+}
+h2 .title-b {
+  background-image: url({{ site.github.url }}/img/eyes.png);
+  background-size: 23px 25px;
+  background-repeat: no-repeat;
+  background-position-x: 47px;
+  background-position-y: 10px;
+}
+h1 span.title-b {
+  background-image: url({{ site.github.url }}/img/eyes.png);
+  background-size: 23px 26px;
+  background-repeat: no-repeat;
+  background-position-x: 50px;
+  background-position-y: 14px;
+}
+p.lead>span.title-a, p.lead>span.title-b {
+  font-size: 24px;
+}
+.title-tagline {
+  font-size: 20px;
+  color: white;
+}
+.navbar-collapse {
+  flex-direction: row-reverse;
+  }
+.navbar {
+  background-color: $primary-color-dark;
+}
+.dropdown-menu .dropdown-item{
+  color: $primary-text-color;
+}
+.nav-item a{
+  color: #ffffff;
+}
+.navbar-nav, .nav-item .btn {
+  font-size: 16px;
+}
+.home-img {
+  background-image: url('{{ site.github.url }}/img/passplus-price.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+.home-jmbo {
+  background-color: rgba(0,0,0,0);
+  color: #fff;
+  text-align: center;
+}
+.home-jmbo h2 {
+  color: #fff;
+}
+.home-details {
+  background-color: lightgray;
+  padding:50px;
+  margin-bottom: 50px;
+  // text-align: center;
+}
+.home-features {
+  list-style:none;
+  font-size: 20px;
+  padding-left: 0;
+}
+ul.home-features li::before {
+  content: "\f00c"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  padding-right: 5px;
+}
+.nav-item:last-child {
+  margin-left: 15px;
+}
+.card {
+  margin-bottom: 10px;
+}
+footer {
+  background-color: darkgray;
+  padding: 20px;
+}
+.footer-cert {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.namo {
+  text-align: center;
+}
+.btn-primary {
+  background-color: #388E3C;
+  border-color: #388E3C;
+}
+.btn-primary:hover {
+  background-color: $accent-color;
+  border-color: $accent-color;
+}
+.about-section {
+  margin-top: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #ffffff;
+}
+.about-image {
+  width: 100%;
+}
+.passpluss {
+  display: inline;
+  width: 50px;
+  height: auto;
+}
+.contact-img {
+  background-image: url('{{ site.github.url}}/img/pexels-photo-45113.jpeg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+  height: auto;
+  padding: 90px;
+}
+.lessons-img {
+  background-image: url('{{ site.github.url}}/img/road-car-tire.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+  height: auto;
+  padding: 90px;
+}
+.instructor-img {
+  background-image: url('{{ site.github.url}}/img/trainee-banner.jpeg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+  height: auto;
+  padding: 90px;
+}
+.instructors-img {
+  background-image: url('{{ site.github.url}}/img/instructors-banner.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+  height: auto;
+  padding: 90px;
+}
+.trainee-img {
+  background-image: url('{{ site.github.url}}/img/trainee-banner.jpeg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+  height: auto;
+  padding: 90px;
+}
+.testimonal-img {
+  background-image: url('{{ site.github.url }}/img/testimonials-header.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+  height: auto;
+  padding: 90px;
+}
+.passpluss-img {
+  background-image: url('{{ site.github.url }}/img/pexels-photo-45113.jpeg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+  height: auto;
+  padding: 90px;
+}
+.passplus-price {
+    background-image: url('{{ site.github.url }}/img/passplus-price.jpg');
+    background-size: cover;
+    margin-bottom: -40px;
+}
+.lessons-img .page-title h1, .instructors-img .page-title h1, .trainee-img .page-title h1, .instructor-img .page-title h1, .testimonal-img .page-title h1 {
+  color: white;
+}
+.lessons-lessons {
+  margin-bottom: 40px;
+}
+.lessons-title {
+  padding-top: 40px;
+  background-color: #e2e2e2;
+  margin-bottom: 20px;
+}
+.lessons-title .title-a,.lessons-title .title-b {
+      -webkit-text-stroke: 0;
+}
+.lessons-2 h4 {
+  color: white;
+}
+.lessons-2 img {
+  filter: blur(1px) brightness(90%);
+  -webkit-filter: blur(1px) brightness(90%);
+}
+.inst-image {
+  margin-top: 20px;
+}
+.inst-image img {
+  width: 100%;
+}
+form {
+  background-color: white;
+  padding: 40px;
+}
+.promo {
+  text-align: center;
+  background-color: #5eb8ff;
+  color: white;
+  padding: 40px;
+  margin-top: 40px;
+  margin-bottom: -40px;
+}
+ol.list {
+  list-style: none;
+}
+li.item {
+  counter-increment: item;
+  margin-bottom: 5px;
+}
+li.item:before {
+  padding: 10px;
+  margin-right: 10px;
+  content: counter(item);
+  background: $accent-color;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  display: inline;
+}
+li.item h3 {
+  display: inline;
+}
+footer a .fa {
+  font-size: 30px;
+}
+.not-found {
+  font-size: 92px;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+  background-color: white;
+  transform: rotate(-7deg);
+  width: 150px;
+  height: 150px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.nav-item:hover {
+  background-color: rgba(0,0,0,0.1);
+  border-radius: .3rem;
+}
+.news-section {
+  color: black;
+  text-align: left;
+}
+.news-section .card {
+  padding: 15px;
+}
+#motorway-section {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+#motorway-section .title-a,#motorway-section .title-b {
+      -webkit-text-stroke: 0;
+}
+.img-respon {
+  width: 100%;
+  height: auto;
+}
+#pp-testimonial .card-body {
+  padding: 15px;
+}
