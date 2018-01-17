@@ -36,17 +36,21 @@ tags:
   </div>
 </div>
 
-  <div class="container-fluid">
+{% include book-promo.html %}
+
+  <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-12">
-        <h2 class="test-year">2018</h2>
+      <div class="col-md-12 test-year">
+        <h2>2018</h2>
+        <p class="lead">Some text here to say something like...</p>
+        <p class="lead">Don't just take our word for it!</p>
       </div>
     </div>
     <div class="row">
       {% for post in site.posts %}
         {% if post.year == 2018 %}
-      <div class="col-md-3 col-xs-12">
-        <div class="card">
+      <div class="col-md-4 col-xs-12">
+        <div class="card testimonial-card">
           <img class="card-img-top" src="{{ site.github.url }}{{ post.img-url }}" alt="Our fleet">
           <div class="card-block">
             <h4 class="card-title">{{ post.title }}</h4>
@@ -68,8 +72,8 @@ tags:
     <div class="row">
       {% for post in site.posts %}
       {% if post.year != 2018 %}
-      <div class="col-md-3 col-xs-12">
-        <div class="card">
+      <div class="col-md-4 col-xs-12">
+        <div class="card testimonial-card">
           <img class="card-img-top" src="{{ post.img-url }}" alt="Our fleet">
           <div class="card-block">
             <h4 class="card-title">{{ post.title }}</h4>
