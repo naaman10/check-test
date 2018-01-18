@@ -23,8 +23,13 @@ body {
 .navbar-toggler-icon .material-icons {
   font-size: 30px; }
 
+.navbar-toggler {
+  padding: 0; }
+
 .navbar-toggler-right {
-  top: 1rem; }
+  top: 1rem;
+  width: 30px;
+  height: 30px; }
 
 #nav-icon3 {
   width: 30px;
