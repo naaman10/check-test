@@ -314,7 +314,7 @@ footer {
   background-color: #e2e2e2;
   margin-bottom: 20px; }
 
-.lessons-title .title-a, .lessons-title .title-b {
+.lessons-title .title-a, .lessons-title .title-b, #pp-testimonial .title-a, #pp-testimonial .title-b {
   -webkit-text-stroke: 0; }
 
 .lessons-2 h4 {
