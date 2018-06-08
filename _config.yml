@@ -13,7 +13,7 @@ defaults:
     path: ''
     type: posts
   values:
-    img-url: ''
+    img-url_image_path: ''
     categories: Testimonials
 email: checkmirrors@gmail.com
 description: York driving instructors, checkmirrors, is a School of Motoring based
