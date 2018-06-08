@@ -1,7 +1,7 @@
 ---
 title: 2018 Test
 date: 2018-01-15 23:15:00 Z
-img-url: "/uploads/test.jpg"
+img-url_image_path: "/uploads/test.jpg"
 year: 2018
 layout: post
 ---
