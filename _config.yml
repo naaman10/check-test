@@ -17,8 +17,10 @@ defaults:
     categories: Testimonials
 email: checkmirrors@gmail.com
 description: York driving instructors, checkmirrors, is a School of Motoring based
-  in York with over 14 years experience. Book today from just £25 per hour with Pass
+  in York with over 14 years experience. Book today from just £27 per hour with Pass
   Plus options available in York.
-baseurl: 
+pricePerLesson: "£27"
+priceForTen: "£260"
+baseurl:
 url: http://www.checkmirrors.co.uk
 markdown: kramdown

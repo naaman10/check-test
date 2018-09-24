@@ -5,6 +5,7 @@ layout: default
 tags:
 - driving
 - instructor
+- female
 - lessons
 - york
 - school
@@ -15,19 +16,17 @@ location: York
 ---
 
 <!-- Page Intro -->
-
-<div class="container lessons-img">
+<section class="lessons-img">
+<div class="container ">
   <div class="row">
-    <div class="col"></div>
     <div class="col-9">
       <div class="page-title">
         <h1>{{ page.title }}</h1>
       </div>
     </div>
-    <div class="col"></div>
   </div>
 </div>
-
+</section>
 <!-- Intro End -->
 <section class="lessons-title">
   <div class="container">
@@ -39,7 +38,7 @@ location: York
 Our driving instructors in {{ page.location }} have over 15 years experience, putting you, our pupil first guiding you to success.
 </p>
         <div style="text-align: center;">
-          <h3>Book from only £25 per hour or 10 lessons for £240</h3>
+          <h3>Book from only {{site.pricePerLesson}} per hour or 10 lessons for {{site.priceForTen}}</h3>
           <a class="btn btn-primary btn-lg typeform-share button" href="https://naaman10.typeform.com/to/y2l4S0" data-mode="drawer_right" target="_blank">Book Now</a>
         </div>
       </div>
@@ -64,7 +63,7 @@ Our driving instructors in {{ page.location }} have over 15 years experience, pu
           <img class="card-img" src="{{ site.github.url }}/img/lessons-2-350x150.jpg" width="100%" alt="Card image">
           <div class="card-img-overlay">
             <h4 class="card-title">Learn in York and surrounding areas</h4>
-            <p class="card-text lead">We now have instructors in York</p>
+            <p class="card-text lead">We have male and female instructors in York</p>
           </div>
         </div>
       </div>
